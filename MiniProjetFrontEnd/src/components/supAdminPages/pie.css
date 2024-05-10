@@ -1,0 +1,69 @@
+@keyframes rotateSlice {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .slice {
+    animation: rotateSlice 2s linear infinite;
+  }
+  
+  .pie-chart {
+    background: radial-gradient(
+        circle closest-side,
+        transparent 60%,
+        rgb(249, 245, 245) 0
+      ),
+      conic-gradient(
+        from 11deg,
+        #0B7077 0,
+        #0B7077 38%,
+        #fbb3b5 0,
+        #fcbfc0 77%,
+        #D2E6E4 0,
+        #D2E6E4 87%,
+        #FFA500 0,
+        #FFA500 100%
+      );
+    position: relative;
+    width: 18vw;
+    min-height: 350px;
+    margin-left: 30vh;
+    border-radius: 12%;
+  }
+  
+  .pie-chart h2 {
+    position: absolute;
+    margin: 1rem;
+  }
+  
+  .pie-chart cite {
+    position: absolute;
+    bottom: 0;
+    font-size: 80%;
+    padding: 1rem;
+    color: gray;
+  }
+  
+  .pie-chart figcaption {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: smaller;
+    text-align: right;
+  }
+  
+  .pie-chart span:after {
+    display: inline-block;
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.4em;
+    height: 0.8em;
+    border-radius: 0.2em;
+    background: currentColor;
+  }
+  

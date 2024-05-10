@@ -1,0 +1,144 @@
+@import url("../../App.css");
+
+.navbar{
+    min-width: 300px;
+    background-color:var(--primary-color);
+    height: 100vh;
+    z-index: 9999999; 
+    position: fixed;
+    font-family: var(--little-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+      font-size: 2rem;
+      color: white;
+    }
+  }
+.navbarBody{
+  width: 100%;
+}
+Link{
+  text-decoration: none;
+}
+  button >span{
+    margin-right: 10px;
+  }
+.navLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-left: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+.notClicked:hover{
+  color:#5356d0;
+}
+  .navLine .title{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 100%;
+    width: 78%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+.subLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #ececec;
+    border-bottom: 1px solid white;
+    color: #818181;
+  }
+  .subLine .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 22%;
+    border-right: 1px solid white;
+  }
+  .subLine .title{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 100%;
+    width: 78%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .subLine .title:hover{
+    color: black;
+  }
+  .blur-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex:1;
+    height: 100vh;
+    min-width: 100vw;
+    backdrop-filter: blur(1rem);
+    z-index: 9999; 
+  }
+  .head{
+    height: 12vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-bottom: 50px;
+   }
+   .head img{
+    height: 12vh;
+    width: 180px;
+   }
+   .title {
+     font-size: 1rem;
+     font-weight: 500;
+   }
+   .croix{
+    display: none;
+    justify-content: end;
+   
+  }
+
+  .navClicked{
+    color:white;
+    background-color: #5356d0;
+  }
+  @media (max-width: 1160px) {
+    .blur-overlay{
+      display: block;
+    }
+  } 
+@media (max-width: 850px) {
+  .navLine .title{
+    font-size: 0.9rem;
+  }
+  .head img{
+    height: 11vh;
+    width: 150px;
+   }
+   .navbar{
+    min-width: 250px;
+   }
+}
+@media (max-width: 850px) {
+  .head{
+    margin-bottom: 30px;
+  }
+}   
+ 

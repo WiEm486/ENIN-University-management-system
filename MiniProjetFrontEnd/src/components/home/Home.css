@@ -1,0 +1,5 @@
+.home{
+        display: flex;
+        position: relative;
+        background-size: cover;     
+}

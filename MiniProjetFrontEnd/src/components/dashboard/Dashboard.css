@@ -1,0 +1,65 @@
+.dashboard{
+    margin-left: 300px;
+    width: 82vw;
+    background-color: #F0EFF5;
+    min-height: 100vh;
+}
+.dashHead{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.searchComponent{
+    display: flex;
+    padding: 7px 12px 7px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.searchComponent input{
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.dashBody{
+    padding: 30px 50px;
+    .username{
+        color: #333269;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+.smallBoxesContainer{
+    display: flex;
+    gap: 20px;
+}
+.smallBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    .addIcon{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .smallBoxTitle{
+        color : #0E1566;
+        font-size: 0.8rem;
+    }
+}

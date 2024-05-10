@@ -1,0 +1,57 @@
+@font-face {
+    font-family:"Arboria-Black";
+    src: url("./assets/Arboria-Black.ttf");
+}
+@font-face {
+    font-family:"Arboria-Book";
+    src: url("./assets/Arboria-Book.ttf");
+}
+
+
+body{
+    background-color: #F0EFF5;
+    font-family: var(--little-font);
+
+}
+:root {
+    --primary-color: #0B7077;
+    --secondary-color: #FD661F;
+    --third-color: #D2E6E4;
+    --optional-color: #e78f8f;
+   --big-font: "Arboria-Black";
+   --little-font: "Arboria-Book";
+}
+
+
+.btn{
+    background-color:var(--secondary-color)  ;
+}
+h2{
+color: #09565b;
+    font-family: var(--little-font);
+  
+}
+
+
+
+
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+   
+  }
+  
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

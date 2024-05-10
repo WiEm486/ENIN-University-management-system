@@ -1,0 +1,13 @@
+package Miniprojet.MiniProjetBackend.Cours;
+
+import Miniprojet.MiniProjetBackend.Matiere.Matiere;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface CoursRepository extends JpaRepository<Cours,String> {
+    List<Cours> findAllByMatiere(Matiere matiere);
+}
